@@ -33,7 +33,6 @@ document.getElementById("input").oninput=  function (){
 	}else{
 		buttonStart.disabled= false;
 		buttonStop.disabled= false;
-		TimerIDChangeImage = setInterval(ChangeImage, 1000);
 	}
 };
 
@@ -57,10 +56,10 @@ function ChangeImage (){
 		}
 	}
 }
-var TimerIDChangeImage = setInterval(ChangeImage, 1000);
+var TimerIDChangeImage = setInterval(ChangeImage, 2000);
 
 buttonStart.onclick = function(){
-	TimerIDChangeImage = setInterval(ChangeImage, 1000);
+	TimerIDChangeImage = setInterval(ChangeImage, 2000);
 	console.log("start "+TimerIDChangeImage);
 };
 
