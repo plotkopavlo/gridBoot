@@ -56,7 +56,7 @@ function ChangeImage (){
 		}
 	}
 }
-var TimerIDChangeImage = setInterval(ChangeImage, 2000);
+var TimerIDChangeImage;
 
 buttonStart.onclick = function(){
 	TimerIDChangeImage = setInterval(ChangeImage, 2000);
