@@ -28,11 +28,11 @@ document.getElementById("input").oninput=  function (){
 		col4.innerHTML= this.value;
 	if(this.value ===""){
 		buttonStart.disabled= true;
-		buttonEnd.disabled= true;
+		buttonStop.disabled= true;
 		clearInterval(TimerIDChangeImage);
 	}else{
 		buttonStart.disabled= false;
-		buttonEnd.disabled= false;
+		buttonStop.disabled= false;
 		TimerIDChangeImage = setInterval(ChangeImage, 1000);
 	}
 };
