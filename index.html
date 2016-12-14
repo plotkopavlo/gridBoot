@@ -4,28 +4,49 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 
+	<link rel="preload" href="img/mops1.jpg" as="image">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<style>
 		.col-xs-12{
 			border: 1px solid black;
 			height: 300px;
 		}
+		.colum-color{
+			background-color: red;
+		}
+		.row__img{
+			height: 300px;
+			object-fit: cover;
+		}
 	</style>
+
 
 </head>
 <body>
 	<div class="container">
 		<div class="row">
-			<div class=" col-xs-12 col-sm-12 col-md-2 col-md-push-5">1</div>
-			<div class=" col-xs-12 col-sm-6 col-md-5 col-md-pull-2"	>2</div>
-			<div class=" col-xs-12 col-sm-6 col-md-5"	>3</div>
-			<div class=" col-xs-12 col-sm-12 col-md-4">4</div>
-			<div class=" col-xs-12 col-sm-6 col-sm-push-6 col-md-push-0 col-md-8"	>5</div>
-			<div class=" col-xs-12 col-sm-6 col-sm-pull-6 col-md-pull-0 col-md-12">6</div>
+			<div class=" col-xs-12 col-sm-12 col-md-2 col-md-push-5" id="col1"> Click!!!!</div>
+			<div class=" col-xs-12 col-sm-6 col-md-5 col-md-pull-2" id="col2">2</div>
+			<div class=" col-xs-12 col-sm-6 col-md-5" id="col3">
+				<input type="text" class="form-control" id="input" placeholder="Введите текст" disabled>
+			</div>
+			<div class=" col-xs-12 col-sm-12 col-md-4" id="col4"></div>
+			<div class=" col-xs-12 col-sm-6 col-sm-push-6 col-md-push-0 col-md-8" id="col5">5</div>
+			<div class=" col-xs-12 col-sm-6 col-sm-pull-6 col-md-pull-0 col-md-12" id="col6">
+				<img src="img/mops.jpg" alt="mops" class=" row__img img-rounded" id="row__img">
+				<button type = "button" class="btn" id="button-start" disabled>
+					<span>Запустить</span>
+				</button>
+				<button type = "button" class="btn" id="button-stop" disabled >
+					<span>Остановить</span>
+				</button>
+			</div>
 		</div>
 	</div>
 
 	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/javascript.js"></script>
+
 	<script src="js/bootstrap.min.js"></script>
 	
 </body>
